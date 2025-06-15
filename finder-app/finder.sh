@@ -21,6 +21,6 @@ x=$(find "${filesdir}" -type f | wc -l)
 
 y=$(find "${filesdir}" -type f -exec grep -l "${searchstr}" {} + | wc -l)
 
-echo "The number of files is ${x} and the number of corresponding rows is ${y}"
+echo "The number of files are ${x} and the number of matching lines are ${y}"
 
 exit 0
